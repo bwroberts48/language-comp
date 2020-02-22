@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LangTokens
 {
-    abstract class AbstractいAdjStrategy : AbstractTypeStrategy
+    public class いAdjAffPresTypeStrategy : AbstractいAdjStrategy
     {
-        //Adds い to the end of the word. To be used by subclasses
+        //Dictionary form is the same as this type
         public override string ToDictionaryForm(string word)
         {
-            return word += "い";
+            return word;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LangTokens
 {
-    class いAdjAffPastTypeStrategy : AbstractいAdjStrategy
+    public class いAdjAffPastTypeStrategy : AbstractいAdjStrategy
     {
         //Removes かった and adds い
         public override string ToDictionaryForm(string word)

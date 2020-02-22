@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TokenTypes\LangTokens.csproj">
+      <Project>{e050d8c7-df99-4eb1-a046-b3ffe96a8953}</Project>
+      <Name>LangTokens</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

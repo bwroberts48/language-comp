@@ -8,7 +8,7 @@ namespace LangTokens
 {
     public class Symbol
     {
-        public Symbol(string word, SymbolTypeStrategy type)
+        public Symbol(string word, AbstractTypeStrategy type)
         {
             _type = type;
             _word = type.ToDictionaryForm(word);
@@ -20,13 +20,13 @@ namespace LangTokens
             set { this._word = value; }
         }
 
-        public SymbolTypeStrategy Type
+        public AbstractTypeStrategy Type
         {
             get { return this._type; }
             set { this._type = value; }
         }
 
         private string _word;
-        private SymbolTypeStrategy _type;
+        private AbstractTypeStrategy _type;
     }
 }

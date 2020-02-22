@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LangTokens
 {
-    abstract public class SymbolTypeStrategy
+    abstract public class AbstractTypeStrategy
     {
         abstract public string ToDictionaryForm(string word);
     }

@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace LangTokens
 {
-    class いAdjShortPastTypeStrategy : SymbolTypeStrategy
+    class いAdjAffPastTypeStrategy : AbstractいAdjStrategy
     {
-        //Converts the type and returns it
+        //Removes かった and adds い
         public override string ToDictionaryForm(string word)
         {
             //Takes the "かった" off of the adjective
             string dictForm = word.Substring(0, word.Length - 3);
-            //Adds the い back, lost after it was conjugated
-            dictForm += "い";
+
+            //Adds い 
+            dictForm = base.ToDictionaryForm(dictForm);
 
             return dictForm;
         }

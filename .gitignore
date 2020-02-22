@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+Compiler/Conjugation/Properties/AssemblyInfo.cs
+Compiler/Compiler/Properties/AssemblyInfo.cs

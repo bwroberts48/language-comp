@@ -8,6 +8,12 @@ namespace LangTokens
 {
     public class Symbol
     {
+        public Symbol(string word, SymbolTypeStrategy type)
+        {
+            _type = type;
+            _word = type.ToDictionaryForm(word);
+        }
+
         public string Word
         {
             get { return this._word; }

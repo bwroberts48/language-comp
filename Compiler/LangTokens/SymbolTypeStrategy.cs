@@ -8,6 +8,6 @@ namespace LangTokens
 {
     abstract public class SymbolTypeStrategy
     {
-        abstract public void ToDictionaryForm();
+        abstract public string ToDictionaryForm(string word);
     }
 }

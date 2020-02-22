@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LangTokens
 {
-    class いAdjTypeStrategy
+    class いAdjPastTypeStrategy : SymbolTypeStrategy
     {
+        public override string ToDictionaryForm(string word)
+        {
+            return null;
+        }
     }
 }
